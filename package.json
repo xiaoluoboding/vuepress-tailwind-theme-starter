@@ -1,0 +1,27 @@
+{
+  "name": "vuepress-tailwind-theme-starter",
+  "version": "0.1.0",
+  "description": "A starter of build vuepress theme with tailwindcss.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "start": "npm run dev"
+  },
+  "author": "xiaoluoboding",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^1.2.0",
+    "vuepress": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2"
+  }
+}

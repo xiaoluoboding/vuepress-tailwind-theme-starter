@@ -13,7 +13,7 @@
           <span
             class="link-text dark:text-themeF-dark
               mx-1 p-2 sm:mx-4 lg:mr-0
-              font-semibold leading-tight
+              font-semibold leading-tight text-gray-600
               hover:text-blue-500 dark:hover:text-neon"
             v-text="item.text"
           />

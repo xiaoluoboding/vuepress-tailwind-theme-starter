@@ -52,11 +52,11 @@ export default {
 .theme-layout
   @apply h-full w-full
   &__header
-    @apply h-20 px-16
+    @apply h-16 px-16
     @apply border-b-2
   &__content
     @apply flex justify-center items-center p-20
   &__footer
-    @apply absolute left-0 bottom-0 flex justify-center items-center h-16 w-full
+    @apply flex justify-center items-center h-16 w-full
     @apply border-t-2
 </style>

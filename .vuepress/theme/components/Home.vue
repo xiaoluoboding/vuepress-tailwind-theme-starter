@@ -1,6 +1,6 @@
 <template>
   <div class="site-home container w-4/5">
-    <section class="intro mb-8 text-center">
+    <section class="intro mb-16 text-center">
       <p class="text-5xl mb-6">Welcome to VuePress Tailwind Starter</p>
       <p class="text-xl text-gray-700 mb-4">
         This is a Starter of VuePress setup with Tailwind CSS.
@@ -19,8 +19,33 @@
         View Posts →
       </button>
     </section>
-    <div class="feature grid grid-cols-3">
-
+    <div class="feature grid grid-cols-2 gap-4">
+      <hero-pattern
+        class="w-full h-64 border"
+        pattern="line-in-motion"
+        color="#276749"
+        bg-color="#F0FFF4"
+        opacity="0.88"
+        repeat="repeat"
+      />
+      <hero-pattern
+        class="w-full h-64 border"
+        pattern="leaf"
+        color="#553C9A"
+        bg-color="#FAF5FF"
+      />
+      <hero-pattern
+        class="w-full h-64 border"
+        pattern="formal-invitation"
+        color="#FED7D7"
+        bg-color="#FFF5F5"
+      />
+      <hero-pattern
+        class="w-full h-64 border"
+        pattern="hexagons"
+        color="#9C4221"
+        bg-color="#FFF5F5"
+      />
     </div>
   </div>
 </template>

@@ -16,9 +16,9 @@ export default {
   components: {
     PostCard
   },
-  inject: ['globalLayout'],
+  inject: ['rootLayout'],
   computed: {
-    posts: vm => vm.globalLayout.posts
+    posts: vm => vm.rootLayout.posts
   }
 }
 </script>

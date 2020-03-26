@@ -11,7 +11,7 @@ module.exports = (options, context) => ({
 
   async clientDynamicModules () {
     const svgs = await svg2datauri()
-    console.log(svgs)
+    // console.log(svgs)
 
     return {
       name: 'svg2datauri.js',

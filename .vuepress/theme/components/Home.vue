@@ -19,40 +19,18 @@
         View Posts →
       </button>
     </section>
-    <div class="feature grid grid-cols-2 gap-4">
-      <hero-pattern
-        class="w-full h-64 border"
-        pattern="line-in-motion"
-        color="#276749"
-        bg-color="#F0FFF4"
-        opacity="0.88"
-        repeat="repeat"
-      />
-      <hero-pattern
-        class="w-full h-64 border"
-        pattern="leaf"
-        color="#553C9A"
-        bg-color="#FAF5FF"
-      />
-      <hero-pattern
-        class="w-full h-64 border"
-        pattern="formal-invitation"
-        color="#FED7D7"
-        bg-color="#FFF5F5"
-      />
-      <hero-pattern
-        class="w-full h-64 border"
-        pattern="hexagons"
-        color="#9C4221"
-        bg-color="#FFF5F5"
-      />
-    </div>
+    <PatternExhibition />
   </div>
 </template>
 
 <script>
+import PatternExhibition from './PatternExhibition'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    PatternExhibition
+  }
 }
 </script>
 

@@ -1,6 +1,12 @@
 <template>
   <div class="max-w-sm rounded overflow-hidden shadow-lg">
     <!-- <img class="w-full" :src="/img/card-top.jpg" alt="Sunset in the mountains"> -->
+    <hero-pattern
+      class="w-full h-48"
+      pattern="formal-invitation"
+      color="#FED7D7"
+      bg-color="#FFF5F5"
+    />
     <div class="px-6 py-4">
       <div
         class="font-bold text-xl mb-2 hover:text-blue-500 cursor-pointer"

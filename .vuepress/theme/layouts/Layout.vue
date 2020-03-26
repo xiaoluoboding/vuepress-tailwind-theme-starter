@@ -43,7 +43,7 @@ export default {
           return new Date(next.frontmatter.published_at) - new Date(prev.frontmatter.published_at)
         })
       return posts
-    },
+    }
   }
 }
 </script>

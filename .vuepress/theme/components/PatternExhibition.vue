@@ -20,7 +20,7 @@ import { HERO_PATTERNS } from '@/theme/constants'
 const sample = arr => arr[Math.floor(Math.random() * arr.length)]
 
 export default {
-  name: 'PatternDisplay',
+  name: 'PatternExhibition',
   data: () => ({
     patterns: HERO_PATTERNS,
     colorPalette: [

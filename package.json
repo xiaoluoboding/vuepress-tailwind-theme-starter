@@ -22,7 +22,14 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^6.2.2"
+    "eslint-plugin-vue": "^6.2.2",
+    "got": "^10.7.0",
+    "metascraper": "^5.11.6",
+    "metascraper-author": "^5.11.6",
+    "metascraper-description": "^5.11.6",
+    "metascraper-image": "^5.11.6",
+    "metascraper-logo": "^5.11.6",
+    "metascraper-title": "^5.11.6"
   },
   "eslintConfig": {
     "root": true,

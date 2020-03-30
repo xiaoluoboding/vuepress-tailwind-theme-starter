@@ -19,15 +19,18 @@
         View Posts →
       </button>
     </section>
-    <div class="feature grid grid-cols-3">
-
+    <div class="feature grid grid-cols-2 gap-4">
+      <BookMark :mark="mark" v-for="mark in marks" :key="mark" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  data: () => ({
+    marks: ['one', 'two', 'three', 'four']
+  })
 }
 </script>
 

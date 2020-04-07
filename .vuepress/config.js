@@ -43,7 +43,7 @@ module.exports = {
           },
           {
             mark: 'five',
-            url: 'https://xiaoluoboding.github.io/monthly/'
+            url: 'https://github.com/vuejs/vue'
           }
         ]
       }

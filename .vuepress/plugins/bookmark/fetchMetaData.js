@@ -18,7 +18,7 @@ const fetchMetaData = async (urls = []) => {
 
   if (urls && urls.length > 0) {
     const promises = urls.map(async item => {
-      const request = got(item.url, { timeout: 1000 })
+      const request = got(item.url, { timeout: 5000 })
       let response = {}
       try {
         response = await request
@@ -26,13 +26,14 @@ const fetchMetaData = async (urls = []) => {
         const metadata = await metascraper({ html, url })
         return { ...item, ...metadata }
       } catch (error) {
-        request.cancel()
-        // console.log(error)
+        // request.cancel()
+        console.log(error)
         console.log(`[__vuepress-plugin-bookmark__] can't got this url: ${item.url}`)
       }
     })
-    const metadatas = await Promise.all(promises)
-    return metadatas
+    const res = await Promise.all(promises)
+    const metaDatas = res.filter(v => v !== undefined)
+    return metaDatas
   }
   return []
 }

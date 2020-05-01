@@ -1,5 +1,11 @@
 <template>
   <div class="site-home container w-4/5">
+    <header class="hero">
+      <img
+        class="my-16 mx-auto h-64"
+        :src="require('@/public/images/vuepress+tailwindcss.png')"
+      />
+    </header>
     <section class="intro mb-8 text-center">
       <p class="text-5xl mb-6">Welcome to VuePress Tailwind Starter</p>
       <p class="text-xl text-gray-700 mb-4">

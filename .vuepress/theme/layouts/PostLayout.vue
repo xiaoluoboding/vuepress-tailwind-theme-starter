@@ -1,5 +1,5 @@
 <template>
-  <main class="theme-container site-post p-6 sm:p-0">
+  <main class="theme-container site-post p-6">
     <component :is="layout" />
   </main>
 </template>

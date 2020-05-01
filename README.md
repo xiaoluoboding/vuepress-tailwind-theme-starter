@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/admin-api-vuepress-diagram.png
+heroImage: /images/vuepress+tailwindcss.png
 actionText: Get Started →
 actionLink: /posts/
 features:

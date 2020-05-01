@@ -20,7 +20,12 @@
       </button>
     </section>
     <div class="feature grid grid-cols-3">
-
+      <svg-icon symbol="html5" class-name="symbol" />
+      <svg-icon symbol="css3" class-name="symbol" />
+      <svg-icon symbol="javascript" class-name="symbol" />
+      <svg-icon symbol="vue" class-name="symbol" />
+      <svg-icon symbol="webpack" class-name="symbol" />
+      <svg-icon symbol="eslint" class-name="symbol" />
     </div>
   </div>
 </template>
@@ -40,5 +45,6 @@ export default {
 
 .btn-blue:hover
   @apply bg-blue-700
-
+.svg-icon-symbol
+  @apply text-4xl my-8 mx-auto
 </style>

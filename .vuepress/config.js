@@ -1,4 +1,5 @@
 const { path } = require('@vuepress/shared-utils')
+const SvgSprite = require('./plugins/svg-sprite/index')
 
 module.exports = {
   title: 'VuePress Tailwind Starter',
@@ -17,5 +18,8 @@ module.exports = {
       require('tailwindcss'),
       require('autoprefixer')
     ]
-  }
+  },
+  plugins: [
+    SvgSprite
+  ]
 }

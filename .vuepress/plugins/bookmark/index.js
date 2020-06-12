@@ -1,7 +1,11 @@
 const path = require('path')
-const fetchMetaData = require('./fetchMetaData')
+// const fetchMetaData = require('./fetchMetaData')
+const apifyMetaData = require('./apifyMetaData')
 
-module.exports = ({ urls }, context) => ({
+const flatten = (arr, depth = 1) =>
+  arr.reduce((a, v) => a.concat(depth > 1 && Array.isArray(v) ? flatten(v, depth - 1) : v), [])
+
+module.exports = (params, { pages }) => ({
   name: 'bookmark',
 
   enhanceAppFiles: [
@@ -9,8 +13,13 @@ module.exports = ({ urls }, context) => ({
   ],
 
   async clientDynamicModules () {
-    console.log(urls)
-    const metaData = await fetchMetaData(urls)
+    // console.log(pages)
+    const bookmarkUrls = flatten(pages.map(page => page.frontmatter)
+      .filter(fm => fm.bookmarks && fm.bookmarks.length > 0)
+      .map(fm => fm.bookmarks))
+    console.log(bookmarkUrls)
+    // const metaData = {}
+    // const metaData = await fetchMetaData(urls)
     /**
      * {
         author: 'Ghost',
@@ -20,6 +29,9 @@ module.exports = ({ urls }, context) => ({
         title: 'Ghost Handlebars Themes - Building a custom Ghost theme - Docs'
       }
      */
+    const metaData = await apifyMetaData(bookmarkUrls)
+    console.log(metaData)
+
     return {
       name: 'constants.js',
       content: `export const META_DATA = ${JSON.stringify(metaData)}`

@@ -1,13 +1,13 @@
 import { META_DATA } from '@dynamic/constants'
-import BookMark from './BookMark.vue'
+import Bookmark from './Bookmark.vue'
 
 export default ({ Vue }) => {
   // Use BookMark component
-  Vue.component('BookMark', BookMark)
+  Vue.component('Bookmark', Bookmark)
   // inject dynamic computed properties
   Vue.mixin({
     computed: {
-      $bookmarks: () => META_DATA
+      $bookmarks: () => JSON.parse(META_DATA)
     }
   })
 }

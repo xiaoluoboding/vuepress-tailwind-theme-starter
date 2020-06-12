@@ -20,9 +20,7 @@
       </button>
     </section>
     <div class="feature grid grid-cols-1 gap-4">
-      <section v-for="bookmark in $bookmarks" :key="bookmark.mark">
-        <BookMark v-if="bookmark" :mark="bookmark.mark" />
-      </section>
+      <Bookmark alias="vuepress-tailwind-theme-starter" />
     </div>
   </div>
 </template>

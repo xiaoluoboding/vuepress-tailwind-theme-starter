@@ -10,5 +10,8 @@ features:
     details: Vue-powered Static Site Generator.
   - title: Tainwindcss Powered
     details: Base on Ghost headless CMS flexibility Content API.
+bookmarks:
+  - url: https://github.com/xiaoluoboding/vuepress-tailwind-theme-starter
+    alias: vuepress-tailwind-theme-starter
 footer: MIT Licensed | Copyright © 2020-present xiaoluoboding
 ---

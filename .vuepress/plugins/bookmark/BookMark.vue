@@ -1,17 +1,24 @@
 <template>
-  <figure class="vp-bookmark-card">
-    <a :href="metaData.url" class="vp-bookmark-container" target="_blank">
+  <figure
+    class="vp-bookmark-card"
+    :class="{
+      'vp-bookmark-card--large': size === 'large',
+      'vp-bookmark-card--medium': size === 'medium',
+      'vp-bookmark-card--small': size === 'small'
+    }"
+  >
+    <a :href="metaData.url" class="vp-bookmark-wrapper" :style="dynamicStyle" target="_blank">
       <div class="vp-bookmark-content">
-        <div class="vp-bookmark-content-box">
-          <div class="vp-bookmark-title">{{metaData.title}}</div>
+        <div class="vp-bookmark-content--box vp-bookmark-content__title">
+          <span>{{metaData.title}}</span>
         </div>
-        <div class="vp-bookmark-content-box">
-          <div class="vp-bookmark-description">{{metaData.description}}</div>
+        <div class="vp-bookmark-content--box vp-bookmark-content__desc">
+          <span>{{metaData.description}}</span>
         </div>
-        <div class="vp-bookmark-content-box">
-          <div class="vp-bookmark-metadata">
-            <img :src="metaData.logo" class="vp-bookmark-icon" v-if="metaData.logo">
-            <span class="vp-bookmark-author">{{metaData.author}}</span>
+        <div class="vp-bookmark-content--box vp-bookmark-content__meta">
+          <div class="vp-bookmark-meta">
+            <img :src="metaData.logo" class="vp-bookmark-meta__icon" v-if="metaData.logo">
+            <span class="vp-bookmark-meta__author">{{metaData.author}}</span>
           </div>
         </div>
       </div>
@@ -23,26 +30,42 @@
 </template>
 
 <script>
-import { META_DATA } from '@dynamic/constants'
-
 export default {
-  name: 'BookMark',
+  name: 'Bookmark',
   props: {
-    mark: {
+    alias: {
       type: String,
       require: true
+    },
+    size: {
+      type: String,
+      default: () => 'medium'
+    },
+    /**
+     * the image render position of bookmark
+     */
+    cover: {
+      type: String,
+      default: () => 'right'
     }
   },
   computed: {
     metaData: vm => {
-      const idx = META_DATA.findIndex(item => item.mark === vm.mark)
-      return idx !== -1 ? META_DATA[idx] : {}
+      const idx = vm.$bookmarks.findIndex(item => item.alias === vm.alias)
+      return idx !== -1 ? vm.$bookmarks[idx] : {}
+    },
+    dynamicStyle () {
+      return {
+        flexDirection: this.cover === 'right'
+          ? 'row-reverse'
+          : 'row'
+      }
     }
   }
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
 .vp-bookmark-card {
   width: 100%;
   position: relative;
@@ -51,92 +74,130 @@ export default {
   border-radius: 5px;
   box-shadow: 0 0 1px rgba(0,0,0,.06), 0 2px 6px rgba(0,0,0,.03);
   overflow: hidden;
-}
 
-.vp-bookmark-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  color: currentColor;
-  font-family: inherit;
-  text-decoration: none;
-  /* border: 1px solid rgba(0, 0, 0, 0.1); */
-  color: #364247;
-  box-shadow: none;
-}
+  .vp-bookmark-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    color: currentColor !important;
+    font-family: inherit;
+    text-decoration: none !important;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    color: #364247;
+    box-shadow: none;
+    &:hover {
+      text-decoration: none;
+    }
+    .vp-bookmark-content {
+      display: grid;
+      flex-grow: 999;
+      flex-basis: 0;
+      padding: 16px 18px;
+      min-width: 50%;
+      order: 1;
+      &--box {
+        display: flex;
+        align-items: center;
+      }
+      &__title {
+        font-weight: 600;
+      }
+      &__desc,
+      &__meta {
+        margin-top: .5em;
+      }
+      &__desc {
+        display: -webkit-box;
+        word-break: break-all;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #636363;
+      }
+      &__meta {
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .vp-bookmark-meta {
+        display: flex;
+        align-items: center;
+        &__icon {
+          display: inline-block;
+          vertical-align: text-bottom;
+          margin-right: .5rem;
+        }
+        &__author {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
 
-.vp-bookmark-container:hover {
-  text-decoration: none;
-}
+    .vp-bookmark-thumbnail {
+      position: relative;
+      flex-basis: 16rem;
+      flex-grow: 1;
+      min-width: 33%;
+      max-height: 100%;
+      height: 9rem;
+      img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        vertical-align: bottom;
+        object-fit: cover;
+      }
+    }
+  }
 
-.vp-bookmark-content {
-  display: grid;
-  flex-grow: 999;
-  flex-basis: 0;
-  padding: 16px 18px;
-  min-width: 50%;
-  order: 1;
-}
+  &.vp-bookmark-card--medium {
+    .vp-bookmark-content {
+      &__title {
+        font-size: 16px;
+      }
+      &__desc {
+        font-size: 14px;
+      }
+    }
+    .vp-bookmark-meta {
+      &__icon {
+        width: 1rem;
+        height: 1rem;
+      }
+      &__author {
+        font-size: 14px;
+      }
+    }
+  }
 
-.vp-bookmark-content-box {
-  display: flex;
-  align-items: center;
-}
-
-.vp-bookmark-title {
-  font-weight: 600;
-}
-
-.vp-bookmark-metadata,
-.vp-bookmark-description {
-  margin-top: .5em;
-}
-
-.vp-bookmark-metadata {
-  align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.vp-bookmark-description {
-  display: -webkit-box;
-  word-break: break-all;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.vp-bookmark-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: text-bottom;
-  margin-right: .5em;
-  margin-bottom: .05em;
-}
-
-.vp-bookmark-thumbnail {
-  position: relative;
-  flex-basis: 20rem;
-  flex-grow: 1;
-  min-width: 33%;
-  max-height: 100%;
-  height: 12rem;
-}
-
-.vp-bookmark-thumbnail img {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  vertical-align: bottom;
-  object-fit: cover;
-}
-
-.vp-bookmark-author {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  // size small style
+  &.vp-bookmark-card--small {
+    .vp-bookmark-content {
+      padding: 8px 12px;
+      &__title {
+        font-size: 14px;
+      }
+      &__desc {
+        font-size: 12px;
+      }
+    }
+    .vp-bookmark-meta {
+      &__icon {
+        width: 0.88rem;
+        height: 0.88rem;
+      }
+      &__author {
+        font-size: 12px;
+      }
+    }
+    .vp-bookmark-thumbnail {
+      flex-basis: 13.5rem;
+      height: 7.5rem;
+    }
+  }
 }
 </style>

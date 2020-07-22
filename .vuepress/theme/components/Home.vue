@@ -21,7 +21,7 @@
         Now we got the power of VuePress + Tailwind CSS + Vue.js, Let's build a beautiful Website with these powerful tech stacks.
       </p>
       <!-- Extracting component classes: -->
-      <button class="btn btn-blue mt-4" @click="$router.push('/posts/')">
+      <button class="btn btn-green mt-4" @click="$router.push('/posts/')">
         View Posts →
       </button>
     </section>
@@ -41,10 +41,10 @@ export default {
 .btn
   @apply font-bold py-4 px-6 rounded
 
-.btn-blue
-  @apply bg-blue-500 text-white
+.btn-green
+  @apply bg-green-600 text-white
 
-.btn-blue:hover
-  @apply bg-blue-700
+.btn-green:hover
+  @apply bg-green-500
 
 </style>

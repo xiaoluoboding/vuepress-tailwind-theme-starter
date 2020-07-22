@@ -24,7 +24,7 @@ git clone https://github.com/xiaoluoboding/vuepress-tailwind-theme-starter NEW_T
 
 ```bash
 yarn
-&
+or
 npm install
 ```
 
@@ -32,7 +32,7 @@ npm install
 
 ```bash
 yarn dev
-&
+or
 npm run dev
 ```
 
@@ -40,7 +40,7 @@ npm run dev
 
 ```bash
 yarn build
-&
+or
 npm run build
 ```
 

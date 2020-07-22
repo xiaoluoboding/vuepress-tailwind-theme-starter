@@ -8,6 +8,8 @@ A starter of build VuePress theme with tailwindcss.
 
 Now we got the power of VuePress + Tailwind CSS + Vue.js, Let's build a beautiful Website with these powerful tech stacks.
 
+![VuePress + Tailwind](./.vuepress/public/images/vuepress+tailwindcss.png)
+
 ## Usage & Development
 
 > 💡 VuePress requires Node.js >= 8.6.

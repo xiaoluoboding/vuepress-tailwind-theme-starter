@@ -11,7 +11,7 @@
   "author": "xiaoluoboding",
   "license": "MIT",
   "dependencies": {
-    "tailwindcss": "^1.9.5",
+    "tailwindcss": "^1.9.6",
     "vuepress": "^1.7.1"
   },
   "devDependencies": {

@@ -11,14 +11,16 @@
   "author": "xiaoluoboding",
   "license": "MIT",
   "dependencies": {
-    "tailwindcss": "^1.9.6",
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vuepress": "^1.7.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.2",

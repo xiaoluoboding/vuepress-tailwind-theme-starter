@@ -966,20 +966,21 @@
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"
 
-"@vuepress/core@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/core/-/core-1.7.1.tgz#e92faad0e9445fdd775f8e0d65e927bc35e80571"
-  integrity sha512-M5sxZq30Ke1vXa4ZZjk6185fwtpiJOqzXNnzcIe0GxtvtaF8Yij6b+KqQKlUJnnUXm+CKxiLCr8PTzDY26N7yw==
+"@vuepress/core@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/core/-/core-1.9.0.tgz#c5b023496e7a0da8269a2ca05db70747f5222cbf"
+  integrity sha512-ulwGhJc6aDJo9ztmmbRB+AgNDXrJ3b/Y9vy7elEBWSqtGN6GFw3O2fGrgZT8V7lLV/mg8Na19fwZRD4LPbDCFw==
   dependencies:
     "@babel/core" "^7.8.4"
     "@vue/babel-preset-app" "^4.1.2"
-    "@vuepress/markdown" "1.7.1"
-    "@vuepress/markdown-loader" "1.7.1"
-    "@vuepress/plugin-last-updated" "1.7.1"
-    "@vuepress/plugin-register-components" "1.7.1"
-    "@vuepress/shared-utils" "1.7.1"
+    "@vuepress/markdown" "1.9.0"
+    "@vuepress/markdown-loader" "1.9.0"
+    "@vuepress/plugin-last-updated" "1.9.0"
+    "@vuepress/plugin-register-components" "1.9.0"
+    "@vuepress/shared-utils" "1.9.0"
     autoprefixer "^9.5.1"
     babel-loader "^8.0.4"
+    bundle-require "2.1.8"
     cache-loader "^3.0.0"
     chokidar "^2.0.3"
     connect-history-api-fallback "^1.5.0"
@@ -987,6 +988,7 @@
     core-js "^3.6.4"
     cross-spawn "^6.0.5"
     css-loader "^2.1.1"
+    esbuild "0.14.7"
     file-loader "^3.0.1"
     js-yaml "^3.13.1"
     lru-cache "^5.1.1"
@@ -1010,21 +1012,21 @@
     webpack-merge "^4.1.2"
     webpackbar "3.2.0"
 
-"@vuepress/markdown-loader@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/markdown-loader/-/markdown-loader-1.7.1.tgz#f3ab20965d5dec6e2fc2d11c78ef1a9f08d62f72"
-  integrity sha512-GM1F/tRhP9qZydTC89FXJPlLH+BmZijMKom5BYLAMEXsU20A9kABTRoatPjOUbZuKT+gn03JgG97qVd8xa/ETw==
+"@vuepress/markdown-loader@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/markdown-loader/-/markdown-loader-1.9.0.tgz#99953824f28ea63f1736677512ce6ac31696ece7"
+  integrity sha512-NYQBapqpbTuUOEJoKsdcT1V9UEFS/QSFondwAaI1BlfmMObN1bb7qr17cGAp+FYqoXl94oFBIxmH4AQiw/NPtQ==
   dependencies:
-    "@vuepress/markdown" "1.7.1"
+    "@vuepress/markdown" "1.9.0"
     loader-utils "^1.1.0"
     lru-cache "^5.1.1"
 
-"@vuepress/markdown@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/markdown/-/markdown-1.7.1.tgz#56f60c2362fd82b8f2702eefa366c0d5b02fdcbd"
-  integrity sha512-Ava9vJECHG1+RC53ut1dXSze35IH5tc3qesC06Ny37WS93iDSQy09j8y+a0Lugy12j1369+QQeRFWa40tdHczA==
+"@vuepress/markdown@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/markdown/-/markdown-1.9.0.tgz#12c7b03e2418bec596815112849f5a3f813cd93f"
+  integrity sha512-cujp8gSQtAwm1W2LMxrbbjQR3+hfRkApUdkdhwzMXxsDPxj0ZDwKoNs2bBTf0JV/VL1MuAee+HmVPOwHl7t47Q==
   dependencies:
-    "@vuepress/shared-utils" "1.7.1"
+    "@vuepress/shared-utils" "1.9.0"
     markdown-it "^8.4.1"
     markdown-it-anchor "^5.0.2"
     markdown-it-chain "^1.3.0"
@@ -1032,43 +1034,43 @@
     markdown-it-table-of-contents "^0.4.0"
     prismjs "^1.13.0"
 
-"@vuepress/plugin-active-header-links@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.7.1.tgz#5a16281bebb977fc1c2b93d992b1a3b7ff840641"
-  integrity sha512-Wgf/oB9oPZLnYoLjQ/xbQc4Qa3RU5tXAo2dB4Xl/7bUL6SqBxO866kX3wPxKdSOIL58tq8iH9XbUe3Sxi8/ISQ==
+"@vuepress/plugin-active-header-links@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.9.0.tgz#e16f54c45d9688faf4ecad16052f9ffa5e3afc8e"
+  integrity sha512-+6gJLmunLy6d4eCqEdJJdwlfb3k/1t6f0hpL6b2l1dXZtWVMS+fgTsss7xc7bQnOM/0ewliWOf76Xr6SKI1EXA==
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-last-updated@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-last-updated/-/plugin-last-updated-1.7.1.tgz#668c55daa6b8bc1d8ee42cdb4169cf67c01b6e97"
-  integrity sha512-VW5jhBuO0WRHDsBmFsKC6QtEyBLCgyhuH9nQ65aairCn3tdoJPz0uQ4g3lr/boVbgsPexO677Sn3dRPgYqnMug==
+"@vuepress/plugin-last-updated@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-last-updated/-/plugin-last-updated-1.9.0.tgz#ce8ecd16da1b1a15cdda80d57181c22c304c0d47"
+  integrity sha512-TiIAmfxeD0sQ1S8j84A/m8urFQLDBwwQq/EQHMRXhVMO7hc5bBpn1O0WKUUhFkUlFGP5rE2HvvHW3NPOoYWKJg==
   dependencies:
     cross-spawn "^6.0.5"
 
-"@vuepress/plugin-nprogress@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.7.1.tgz#101ebf720eaa635a473e16ca16e7b4a7850331fa"
-  integrity sha512-KtqfI3RitbsEbm22EhbooTvhjfMf6zttKlbND7LcyJwP3MEPVYyzQJuET03hk9z4SgCfNV2r/W3sYyejzzTMog==
+"@vuepress/plugin-nprogress@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.9.0.tgz#2a1b589f33321010c6751420096bc6c022203499"
+  integrity sha512-ZEd/Zr0sbFiJzY/uDC2//U27expAYuZ9gtDOt8XL4c/4850r1GBT3YkbaBeJbKtLnkpKOJ+j+JWVcj9PJM6glA==
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-register-components@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-1.7.1.tgz#1ff58e931e8c27d64f9b86f2df879ddaceccdebe"
-  integrity sha512-MlFdH6l3rTCJlGMvyssXVG998cq5LSMzxCuQLYcRdtHQT4HbikIcV4HSPGarWInD1mP12+qX/PvKUawGwp1eVg==
+"@vuepress/plugin-register-components@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-1.9.0.tgz#c76f1bb513969d43cdf0ce0595f65bdfb0d462b1"
+  integrity sha512-fwBkisSUg8dv36z84L2k9XTW0rKQR30tyxRmYLoLIBWbPR9OXfonRNPls1umwTRXpEGB4VtOUW3CjgfEUMP+cA==
   dependencies:
-    "@vuepress/shared-utils" "1.7.1"
+    "@vuepress/shared-utils" "1.9.0"
 
-"@vuepress/plugin-search@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.7.1.tgz#f52b6e77af30f452213bc677741cefe8a8309be2"
-  integrity sha512-OmiGM5eYg9c+uC50b6/cSxAhqxfD7AIui6JEztFGeECrlP33RLHmteXK9YBBZjp5wTNmoYs+NXI/cWggYUPW8Q==
+"@vuepress/plugin-search@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.9.0.tgz#61d93e9af71dcc0e3dd5b5da11d5a3b2d303dbe6"
+  integrity sha512-hZRXXV0Y30k4yttf/77hKbBmpm90tiNvRgmgHNBpC+uNSBKB/t2rSBmoouwrRPdb6tRk/ZfTExMd+h+DdQ0TzQ==
 
-"@vuepress/shared-utils@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.7.1.tgz#028bc6003247bb4c60cdc96f231eecfb55e7b85d"
-  integrity sha512-ydB2ZKsFZE6hFRb9FWqzZksxAPIMJjtBawk50RP6F+YX5HbID/HlyYYZM9aDSbk6RTkjgB5UzJjggA2xM8POlw==
+"@vuepress/shared-utils@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.9.0.tgz#b486c50f501420eb61153c0ba6d1b892dc55c447"
+  integrity sha512-as1LO6B2BFvTW8GItMhEf43y6Lc8PB0GoyMowSe7d9P6OZPiOcVQs9Rk6nEgri9QikvEmV8OsHxxX4I7Sedbxg==
   dependencies:
     chalk "^2.3.2"
     escape-html "^1.0.3"
@@ -1080,14 +1082,14 @@
     toml "^3.0.0"
     upath "^1.1.0"
 
-"@vuepress/theme-default@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/theme-default/-/theme-default-1.7.1.tgz#36fee5bb5165798c0082c512cbf4d94352260d97"
-  integrity sha512-a9HeTrlcWQj3ONHiABmlN2z9TyIxKfQtLsA8AL+WgjN3PikhFuZFIJGzfr+NLt67Y9oiI+S9ZfiaVyvWM+7bWQ==
+"@vuepress/theme-default@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/theme-default/-/theme-default-1.9.0.tgz#8e95adb8dcfd9b4472090a4e0052934f9b366d14"
+  integrity sha512-e3sG9///zTHPfwHBJGIe8FkIdv3jxOQfhHrj/atrXWewlS2DcxlRpGwlWwjltea+IOezicIO0uzydLR2iOigjg==
   dependencies:
-    "@vuepress/plugin-active-header-links" "1.7.1"
-    "@vuepress/plugin-nprogress" "1.7.1"
-    "@vuepress/plugin-search" "1.7.1"
+    "@vuepress/plugin-active-header-links" "1.9.0"
+    "@vuepress/plugin-nprogress" "1.9.0"
+    "@vuepress/plugin-search" "1.9.0"
     docsearch.js "^2.5.2"
     lodash "^4.17.15"
     stylus "^0.54.8"
@@ -1846,6 +1848,11 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
+
+bundle-require@2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/bundle-require/-/bundle-require-2.1.8.tgz#28f6de9d4468a6b7b76fb5c9bf52e70f5091245d"
+  integrity sha512-oOEg3A0hy/YzvNWNowtKD0pmhZKseOFweCbgyMqTIih4gRY1nJWsvrOCT27L9NbIyL5jMjTFrAUpGxxpW68Puw==
 
 bytes@3.0.0:
   version "3.0.0"
@@ -3152,6 +3159,114 @@ es6-promise@^4.1.0:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
   integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
+
+esbuild-android-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-android-arm64/-/esbuild-android-arm64-0.14.7.tgz#8c78cbb617f9f216abfb5a84cca453b51421a1b6"
+  integrity sha512-9/Q1NC4JErvsXzJKti0NHt+vzKjZOgPIjX/e6kkuCzgfT/GcO3FVBcGIv4HeJG7oMznE6KyKhvLrFgt7CdU2/w==
+
+esbuild-darwin-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-darwin-64/-/esbuild-darwin-64-0.14.7.tgz#7424bdb64c104556d36b7429af79ab51415ab8f4"
+  integrity sha512-Z9X+3TT/Xj+JiZTVlwHj2P+8GoiSmUnGVz0YZTSt8WTbW3UKw5Pw2ucuJ8VzbD2FPy0jbIKJkko/6CMTQchShQ==
+
+esbuild-darwin-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.7.tgz#6a243dc0132aeb11c1991f968a6a9e393f43c6bc"
+  integrity sha512-68e7COhmwIiLXBEyxUxZSSU0akgv8t3e50e2QOtKdBUE0F6KIRISzFntLe2rYlNqSsjGWsIO6CCc9tQxijjSkw==
+
+esbuild-freebsd-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-freebsd-64/-/esbuild-freebsd-64-0.14.7.tgz#e7281e50522e724c4da502504dcd75be0db46c94"
+  integrity sha512-76zy5jAjPiXX/S3UvRgG85Bb0wy0zv/J2lel3KtHi4V7GUTBfhNUPt0E5bpSXJ6yMT7iThhnA5rOn+IJiUcslQ==
+
+esbuild-freebsd-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.14.7.tgz#31e513098efd181d76a3ba3ea285836d37f018a3"
+  integrity sha512-lSlYNLiqyzd7qCN5CEOmLxn7MhnGHPcu5KuUYOG1i+t5A6q7LgBmfYC9ZHJBoYyow3u4CNu79AWHbvVLpE/VQQ==
+
+esbuild-linux-32@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-linux-32/-/esbuild-linux-32-0.14.7.tgz#82cf96accbf55d3007c3338dc3b3144efa9ae108"
+  integrity sha512-Vk28u409wVOXqTaT6ek0TnfQG4Ty1aWWfiysIaIRERkNLhzLhUf4i+qJBN8mMuGTYOkE40F0Wkbp6m+IidOp2A==
+
+esbuild-linux-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-linux-64/-/esbuild-linux-64-0.14.7.tgz#67bdfe23a6ca918a0bb8e9558a3ee0fdf98c0bc0"
+  integrity sha512-+Lvz6x+8OkRk3K2RtZwO+0a92jy9si9cUea5Zoru4yJ/6EQm9ENX5seZE0X9DTwk1dxJbjmLsJsd3IoowyzgVg==
+
+esbuild-linux-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-linux-arm64/-/esbuild-linux-arm64-0.14.7.tgz#f79c69ff0c176559c418de8e59aa3cf388fff992"
+  integrity sha512-kJd5beWSqteSAW086qzCEsH6uwpi7QRIpzYWHzEYwKKu9DiG1TwIBegQJmLpPsLp4v5RAFjea0JAmAtpGtRpqg==
+
+esbuild-linux-arm@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-linux-arm/-/esbuild-linux-arm-0.14.7.tgz#3d665b35e1c27dbe1c9deb8bf956d7d1f191a21b"
+  integrity sha512-OzpXEBogbYdcBqE4uKynuSn5YSetCvK03Qv1HcOY1VN6HmReuatjJ21dCH+YPHSpMEF0afVCnNfffvsGEkxGJQ==
+
+esbuild-linux-mips64le@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.14.7.tgz#226114a0cc6649ba0ffd3428118a8f622872f16d"
+  integrity sha512-mFWpnDhZJmj/h7pxqn1GGDsKwRfqtV7fx6kTF5pr4PfXe8pIaTERpwcKkoCwZUkWAOmUEjMIUAvFM72A6hMZnA==
+
+esbuild-linux-ppc64le@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.14.7.tgz#5c67ae56517f2644d567b2ca5ecb97f9520cfc49"
+  integrity sha512-wM7f4M0bsQXfDL4JbbYD0wsr8cC8KaQ3RPWc/fV27KdErPW7YsqshZZSjDV0kbhzwpNNdhLItfbaRT8OE8OaKA==
+
+esbuild-netbsd-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-netbsd-64/-/esbuild-netbsd-64-0.14.7.tgz#69dc0469ea089013956d8c6aa71c9e7fc25fc567"
+  integrity sha512-J/afS7woKyzGgAL5FlgvMyqgt5wQ597lgsT+xc2yJ9/7BIyezeXutXqfh05vszy2k3kSvhLesugsxIA71WsqBw==
+
+esbuild-openbsd-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.7.tgz#3a9d04ecf820708e2e5b7d26fa7332e3f19f6b6c"
+  integrity sha512-7CcxgdlCD+zAPyveKoznbgr3i0Wnh0L8BDGRCjE/5UGkm5P/NQko51tuIDaYof8zbmXjjl0OIt9lSo4W7I8mrw==
+
+esbuild-sunos-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-sunos-64/-/esbuild-sunos-64-0.14.7.tgz#7c33a682f0fd9565cae7df165d0e8736b7b62623"
+  integrity sha512-GKCafP2j/KUljVC3nesw1wLFSZktb2FGCmoT1+730zIF5O6hNroo0bSEofm6ZK5mNPnLiSaiLyRB9YFgtkd5Xg==
+
+esbuild-windows-32@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-windows-32/-/esbuild-windows-32-0.14.7.tgz#24ec706a5f25b4499048f56146bcff0ed3839dce"
+  integrity sha512-5I1GeL/gZoUUdTPA0ws54bpYdtyeA2t6MNISalsHpY269zK8Jia/AXB3ta/KcDHv2SvNwabpImeIPXC/k0YW6A==
+
+esbuild-windows-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-windows-64/-/esbuild-windows-64-0.14.7.tgz#dd6d5b5bace93cd7a9174d31fbd727ba21885abf"
+  integrity sha512-CIGKCFpQOSlYsLMbxt8JjxxvVw9MlF1Rz2ABLVfFyHUF5OeqHD5fPhGrCVNaVrhO8Xrm+yFmtjcZudUGr5/WYQ==
+
+esbuild-windows-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.7.tgz#ecfd9ac289606f26760c4f737caaeeadfff3cfe3"
+  integrity sha512-eOs1eSivOqN7cFiRIukEruWhaCf75V0N8P0zP7dh44LIhLl8y6/z++vv9qQVbkBm5/D7M7LfCfCTmt1f1wHOCw==
+
+esbuild@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.14.7.tgz#e85cead55b0e1001abf1b2ce4a11c1d4d709d13c"
+  integrity sha512-+u/msd6iu+HvfysUPkZ9VHm83LImmSNnecYPfFI01pQ7TTcsFR+V0BkybZX7mPtIaI7LCrse6YRj+v3eraJSgw==
+  optionalDependencies:
+    esbuild-android-arm64 "0.14.7"
+    esbuild-darwin-64 "0.14.7"
+    esbuild-darwin-arm64 "0.14.7"
+    esbuild-freebsd-64 "0.14.7"
+    esbuild-freebsd-arm64 "0.14.7"
+    esbuild-linux-32 "0.14.7"
+    esbuild-linux-64 "0.14.7"
+    esbuild-linux-arm "0.14.7"
+    esbuild-linux-arm64 "0.14.7"
+    esbuild-linux-mips64le "0.14.7"
+    esbuild-linux-ppc64le "0.14.7"
+    esbuild-netbsd-64 "0.14.7"
+    esbuild-openbsd-64 "0.14.7"
+    esbuild-sunos-64 "0.14.7"
+    esbuild-windows-32 "0.14.7"
+    esbuild-windows-64 "0.14.7"
+    esbuild-windows-arm64 "0.14.7"
 
 escalade@^3.0.1:
   version "3.0.2"
@@ -8306,17 +8421,18 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress@^1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.7.1.tgz#bb0e139d8c407a0b5aa962cf9577832a5808937e"
-  integrity sha512-AdA3do1L4DNzeF8sMTE+cSUJ5hR/6f3YujU8DVowi/vFOg/SX2lJF8urvDkZUSXzaAT6aSgkI9L+B6D+i7SJjA==
+vuepress@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.9.0.tgz#7cdd83b9756823b1d87b0f7add6aab41ff5fbb75"
+  integrity sha512-YJOuxNlSuyJIBtunOunC50UfmSgd7XwZPS+DnGf0CSvp3tA54aUmcAk40qetzSo7DvCs+26szHAO4Kg8++uJ/w==
   dependencies:
-    "@vuepress/core" "1.7.1"
-    "@vuepress/theme-default" "1.7.1"
+    "@vuepress/core" "1.9.0"
+    "@vuepress/theme-default" "1.9.0"
     cac "^6.5.6"
     envinfo "^7.2.0"
     opencollective-postinstall "^2.0.2"
     update-notifier "^4.0.0"
+    webpack-chain "^6.0.0"
 
 watchpack@^1.6.0:
   version "1.6.0"

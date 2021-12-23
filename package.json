@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "tailwindcss": "^1.9.6",
-    "vuepress": "^1.7.1"
+    "vuepress": "^1.9.3"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

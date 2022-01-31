@@ -1,7 +1,7 @@
 <template>
-  <div class="site-header flex justify-between items-center">
+  <div class="site-header flex justify-between items-center bg-gray-900">
     <router-link to="/" class="site-header__banner text-2xl">
-      {{$site.title}}
+      <span class="font-semibold">{{$site.title}}</span> <span class="font-mono text-blue-500">{frex-e}</span>
     </router-link>
     <nav class="site-header__nav flex items-center flex-end">
       <div
@@ -13,7 +13,7 @@
             class="link-text
               mx-1 p-2 sm:mx-4 lg:mr-0
               font-semibold leading-tight text-gray-600
-              hover:text-green-500"
+              hover:text-blue-500"
             v-text="item.text"
           />
         </router-link>
@@ -23,7 +23,7 @@
               class="link-text
                 mx-1 p-2 sm:mx-4 lg:mr-0
                 font-semibold leading-tight
-                hover:text-green-500"
+                hover:text-blue-500"
               v-text="item.text"
             />
           </a>

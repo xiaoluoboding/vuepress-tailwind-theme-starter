@@ -1,5 +1,5 @@
 <template>
-  <div class="theme-layout">
+  <div class="theme-layout text-white">
     <Header class="theme-layout__header" />
     <component :is="layout" class="theme-layout__content" />
     <Footer class="theme-layout__footer" />
@@ -50,13 +50,13 @@ export default {
 
 <style lang="stylus" scoped>
 .theme-layout
-  @apply h-full w-full
+  @apply h-full w-full bg-gray-800 overflow-auto
   &__header
     @apply h-16 px-16
-    @apply border-b-2
+    @apply border-b-2 border-blue-500
   &__content
     @apply flex justify-center items-center
   &__footer
     @apply flex justify-center items-center h-16 w-full
-    @apply border-t-2
+    @apply border-t-2 border-blue-500
 </style>

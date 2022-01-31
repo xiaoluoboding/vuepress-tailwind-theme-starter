@@ -1,32 +1,29 @@
 <template>
-  <div class="site-home container w-4/5">
-    <header class="hero">
-      <img
-        class="my-16 mx-auto h-64"
-        :src="require('@/public/images/vuepress+tailwindcss.png')"
-      />
-    </header>
-    <section class="intro mb-8 text-center">
-      <p class="text-5xl mb-6">Welcome to VuePress Tailwind Starter</p>
-      <p class="text-xl text-gray-700 mb-4">
-        This is a Starter of VuePress setup with Tailwind CSS.
-      </p>
-      <p class="text-xl text-gray-700 mb-4">
-        VuePress provides a lot of out of the box functionality tools you can use in your custom theme,
-      </p>
-      <p class="text-xl text-gray-700 mb-4">
-       Tailwind CSS provides low-level utility-first classes that buiding responsive interfaces quickly.
-      </p>
-      <p class="text-xl text-gray-700 mb-4">
-        Now we got the power of VuePress + Tailwind CSS + Vue.js, Let's build a beautiful Website with these powerful tech stacks.
-      </p>
+  <div class="site-home container max-w-6xl text-left pt-16">
+    <section class="intro mb-8 ">
+      <!-- Heading Section -->
+      <div class="font-semibold leading-none">
+        <h1 class="text-5xl mb-5">Hey. I'm <span class="code-block">Indra</span></h1>
+        <h2 class="text-6xl font-normal leading-tight">
+          I like <span class="code-block">maths</span> and making <span class="code-block">computery</span> things.
+        </h2>
+      </div>
+      <br>
       <!-- Extracting component classes: -->
       <button class="btn btn-green mt-4" @click="$router.push('/posts/')">
         View Posts →
       </button>
     </section>
-    <div class="feature grid grid-cols-3">
 
+    <!-- About me -->
+    <div class="mt-16 ">
+      <img src="https://media.discordapp.net/attachments/863300968539619338/901326337283883058/download20211006152841.png" class="float-right w-1/3 p-4 pt-2">
+      <h1 class="font-semibold text-4xl">About me</h1>
+      <p class="text-lg">
+        I'm a highschooler who loves programming and making things for people. Currently I'm learning web development with VueJS.
+
+        I also love Mathematics and have made a <a href="">library of Wolfram Language/Mathematica functions</a> to use in VCE Maths exams. (Totally not cheating)
+      </p>
     </div>
   </div>
 </template>
@@ -42,9 +39,23 @@ export default {
   @apply font-bold py-4 px-6 rounded
 
 .btn-green
-  @apply bg-green-600 text-white
+  @apply bg-blue-600 text-white
 
 .btn-green:hover
-  @apply bg-green-500
+  @apply bg-blue-500
 
+</style>
+
+<style scoped>
+.code-block {
+  @apply font-mono text-blue-500 bg-gray-900 px-3 rounded-xl;
+}
+
+a {
+  @apply text-blue-500;
+}
+
+a:hover {
+  @apply underline
+}
 </style>

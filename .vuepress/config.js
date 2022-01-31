@@ -1,7 +1,7 @@
 const { path } = require('@vuepress/shared-utils')
 
 module.exports = {
-  title: 'VuePress Tailwind Starter',
+  title: 'Indra Kusumah-kasim',
   description: 'VuePress Recipes for Using Tailwind',
   themeConfig: {
     nav: [

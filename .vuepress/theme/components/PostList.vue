@@ -1,5 +1,5 @@
 <template>
-  <div class="post-list grid grid-cols-2 gap-4">
+  <div class="post-list flex flex-col">
     <post-card
       v-for="post in posts"
       :key="post.id"

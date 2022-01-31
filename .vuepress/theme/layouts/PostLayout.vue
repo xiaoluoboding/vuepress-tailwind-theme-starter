@@ -1,7 +1,9 @@
 <template>
-  <main class="theme-container site-post p-6">
-    <component :is="layout" />
-  </main>
+  <div class="flex flex-col items-center">
+    <main class="theme-container site-post p-6 max-w-4xl w-full">
+      <component :is="layout" />
+    </main>
+  </div>
 </template>
 
 <script>

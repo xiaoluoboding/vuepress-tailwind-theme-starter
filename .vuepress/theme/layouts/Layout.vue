@@ -1,8 +1,8 @@
 <template>
-  <div class="theme-layout text-white">
-    <Header class="theme-layout__header" />
+  <div class="theme-layout text-white flex flex-col">
+    <Header class="theme-layout__header flex-none" />
     <component :is="layout" class="theme-layout__content" />
-    <Footer class="theme-layout__footer" />
+    <Footer class="theme-layout__footer flex-none mt-auto" />
   </div>
 </template>
 
@@ -52,11 +52,10 @@ export default {
 .theme-layout
   @apply h-full w-full bg-gray-800 overflow-auto
   &__header
-    @apply h-16 px-16
     @apply border-b-2 border-blue-500
   &__content
-    @apply flex justify-center items-center
+    @apply flex items-center
   &__footer
-    @apply flex justify-center items-center h-16 w-full
-    @apply border-t-2 border-blue-500
+    @apply flex justify-center items-center w-full
+    @apply border-t-2 border-blue-500 p-2
 </style>

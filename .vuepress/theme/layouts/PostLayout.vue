@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center justify-start mb-10">
     <main class="theme-container site-post p-6 max-w-4xl w-full">
       <component :is="layout" />
     </main>

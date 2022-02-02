@@ -1,10 +1,10 @@
 <template>
-  <div class="site-home container max-w-6xl text-left pt-16">
+  <div class="site-home container max-w-6xl text-left p-2 pt-16">
     <section class="intro mb-8 ">
       <!-- Heading Section -->
       <div class="font-semibold leading-none">
-        <h1 class="text-5xl mb-5">Hey. I'm <span class="code-block">Indra</span></h1>
-        <h2 class="text-6xl font-normal leading-tight">
+        <h1 class="text-3xl sm:text-5xl mb-5">Hey. I'm <span class="code-block">Indra</span></h1>
+        <h2 class="text-4xl sm:text-6xl font-normal leading-tight">
           I like <span class="code-block">maths</span> and making <span class="code-block">computery</span> things.
         </h2>
       </div>
@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .code-block {
-  @apply font-mono text-blue-500 bg-gray-900 px-3 rounded-xl;
+  @apply font-mono text-blue-500 bg-gray-900 px-2 rounded-xl;
 }
 
 a {

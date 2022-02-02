@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded overflow-hidden shadow-lg">
+  <div class="rounded-xl m-2 overflow-hidden shadow-lg bg-gray-900">
     <!-- <img class="w-full" :src="/img/card-top.jpg" alt="Sunset in the mountains"> -->
     <div class="px-6 py-4">
       <div
@@ -8,7 +8,7 @@
       >
         {{fm.title}}
       </div>
-      <p class="text-gray-700 text-base">
+      <p class="text-gray-500 text-base">
         {{fm.excerpt}}
       </p>
     </div>

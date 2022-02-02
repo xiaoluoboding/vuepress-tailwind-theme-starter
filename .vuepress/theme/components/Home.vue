@@ -20,7 +20,7 @@
       <img src="https://media.discordapp.net/attachments/863300968539619338/901326337283883058/download20211006152841.png" class="float-right w-1/3 rounded-3xl m-2 border-2 border-blue-500">
       <h1 class="font-semibold text-4xl">About me</h1>
       <p class="text-lg">
-        I'm a highschooler who loves programming and making things for people. Currently I'm learning web development with VueJS.
+        I'm a highschool student who loves programming and making things for people. Currently I'm learning web development with VueJS.
 
         I also love Mathematics and have made a <a href="">library of Wolfram Language/Mathematica functions</a> to use in VCE Maths exams. (Totally not cheating)
       </p>
